@@ -1,0 +1,20 @@
+.canvas-toolbox{
+	width:100px;
+	height: 48px;
+    background: #2d7fc7;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.canvas-toolbox i {
+    color: #ffffff;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.canvas-toolbox i:hover {
+    color: #eeeeee;
+}

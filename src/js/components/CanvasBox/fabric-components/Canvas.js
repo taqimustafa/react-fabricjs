@@ -24,12 +24,16 @@ class Fabric_Canvas{
 		this.canvas.setWidth(this.width);
       	this.canvas.setHeight(this.height);
       	FabricStore.setCanvas(this.canvas);
+
+		this.canvas.originalWidth = this.width;
+		this.canvas.originalHeight = this.height;
 	}
 	centerCanvas(){
 	  	$('#'+this.id).closest('div.section').css({
 	  		'margin-top':Math.abs(($('.canvas-box').height()-this.canvas.height)/2),
 	  		'margin-left':Math.abs(($('.canvas-box').width()-this.canvas.width)/2)
 	  	});
+	  	console.log('centered called',this.id);
 	}
 };
 module.exports = Fabric_Canvas;

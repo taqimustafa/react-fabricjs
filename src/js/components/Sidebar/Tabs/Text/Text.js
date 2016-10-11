@@ -79,7 +79,7 @@ export default class Text extends React.Component {
               color:object.fill
             }
             return(
-              <div class="col-md-12" key={index}>
+              <div class="col-md-12 col-sm-12 col-xs-12" key={index}>
                 <div class="heading-color pointer" data-attr={JSON.stringify(object)} onClick={that.addText.bind(this)} style={textStyle}>{object.text}</div>
               </div>
             );

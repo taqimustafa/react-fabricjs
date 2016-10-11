@@ -3,6 +3,7 @@
   height: calc(100vh - 50px);
   display: inline-block;
   float: left;
-  background: #e1e1e1; }
+  background: #e1e1e1;
+  overflow: auto; }
 
 /*# sourceMappingURL=CanvasBox.css.map */

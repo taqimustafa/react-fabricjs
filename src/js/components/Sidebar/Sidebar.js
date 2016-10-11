@@ -22,7 +22,7 @@ export default class Sidebar extends React.Component {
       backgroundImage:'url(src/'+Sprite+')'
     };
     return (
-      <div class="sidebar-container">
+      <div class="sidebar-container hidden-sm">
         <div class="sidebar-menu">
           <div class="menu-icons">
             <section id="sidebar"> 

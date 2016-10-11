@@ -10,4 +10,8 @@
 - Then run command to Run App:
 	`webpack -w`
 
+
+- Run this command to build all css files from scss:
+	`sass --watch .`
+
 And You're done!

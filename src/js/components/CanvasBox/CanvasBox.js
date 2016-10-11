@@ -1,6 +1,8 @@
 import React from "react";
 
-import CanvasBoxCss from "./CanvasBox.css";
+import CanvasBoxCSS from "./CanvasBox.css";
+
+import Toolbox from "./Toolbox/Toolbox.js";
 
 import Canvas from "./fabric-components/Canvas.js";
 import Image from "./fabric-components/Image.js";
@@ -19,10 +21,10 @@ export default class CanvasBox extends React.Component {
     c.init();
     c.centerCanvas();
     
-    // var image = new Image({
-    //   src:'media/image.png'
-    // });
-    // image.create();
+    var image = new Image({
+      src:'media/image.png'
+    });
+    image.create();
     // var image = new Image({
     //   src:'media/Placeholder.jpg',
     // });
@@ -38,6 +40,7 @@ export default class CanvasBox extends React.Component {
         <div class="section no-pad-bot no-pad-top">
           <canvas id = "canvas"></canvas>
         </div>
+        <Toolbox />
       </div>
     );
   }

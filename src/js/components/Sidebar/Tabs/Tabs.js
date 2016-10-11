@@ -28,7 +28,7 @@ export default class Tabs extends React.Component {
     this.updateState();
     return (
       <div class="full-width">
-        <div class="right-menu-container-heading col-md-12"><span>{this.props.activeClass}</span></div>
+        <div class="right-menu-container-heading col-sm-12 col-md-12 col-xs-12"><span>{this.props.activeClass}</span></div>
         <div data-id={this.state.text} class="right-menu-container full-height full-width">
           <div class="custom-scroll full-width">
               <Text visibility={this.state.text}/>
