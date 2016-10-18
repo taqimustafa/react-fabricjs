@@ -12,6 +12,7 @@ export default class Image extends React.Component {
       ImageJSON:[
         'media/image.png',
         'media/Placeholder.jpg',
+        'https://moonly-test.s3.amazonaws.com/mockups/nQsRw3PNs4HF4gRyAart.png'
       ]
     };
     that = this;

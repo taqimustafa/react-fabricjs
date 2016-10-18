@@ -694,11 +694,12 @@
   height: 48px;
   background: #2d7fc7;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   border-radius: 100px;
   padding: 10px;
-  font-size: 20px; }
+  font-size: 20px;
+  box-shadow: 1px 1px 10px rgba(30, 30, 30, 0.7); }
 
 .canvas-toolbox i {
   color: #ffffff;
@@ -708,6 +709,23 @@
 .canvas-toolbox i:hover {
   color: #eeeeee; }
 
-/*# sourceMappingURL=Toolbox.css.map */
+/*# sourceMappingURL=ZoomToolbox.css.map */
+.canvas-toolbar {
+  width: 100%;
+  height: 47px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(30, 30, 30, 0.7); }
+
+/*# sourceMappingURL=Toolbar.css.map */
+
+
+/*# sourceMappingURL=Text.css.map */
+.canvas-toolbar {
+  width: 100%;
+  height: 47px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(30, 30, 30, 0.7); }
+
+/*# sourceMappingURL=Image.css.map */
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9jc3MvYnVuZGxlLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

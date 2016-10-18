@@ -14,13 +14,15 @@ class Fabric_Zoom{
 			if(this.canvas == null){
 				this.canvas = FabricStore.getCanvas();
 			}
-
+			this.canvas.discardActiveObject();
 			this.calculateObjectOriginalPosition();
 			this.currentZoom = this.currentZoom + this.zoomStep;
 			this.calculateObjectUpdatedPosition();
 			this.setCanvasSize();
 			this.centerCanvas();
+			this.updateOverlay();
 			this.canvas.renderAll();
+			window.open(this.canvas.toDataURL(),'_blank');
 		}
 	}
 	zoomOut(){
@@ -28,12 +30,13 @@ class Fabric_Zoom{
 			if(this.canvas == null){
 				this.canvas = FabricStore.getCanvas();
 			}
-
+			this.canvas.discardActiveObject();
 			this.calculateObjectOriginalPosition();
 			this.currentZoom = this.currentZoom - this.zoomStep;
 			this.calculateObjectUpdatedPosition();
 			this.setCanvasSize();
 			this.centerCanvas();
+			this.updateOverlay();
 			this.canvas.renderAll();
 		}
 	}
@@ -59,6 +62,14 @@ class Fabric_Zoom{
 			});
 			object.setCoords();
 		});
+	}
+	updateOverlay(){
+		var that = this;
+		this.canvas.setOverlayImage(that.canvas.overlayImage,that.canvas.renderAll.bind(that.canvas), {
+	        width:that.canvas.width,
+	        height:that.canvas.height
+		});
+		this.canvas.renderAll();
 	}
 	setCanvasSize(){
 		this.canvas.setWidth(this.canvas.originalWidth * (this.currentZoom/100));

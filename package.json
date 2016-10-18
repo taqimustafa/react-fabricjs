@@ -4,8 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot --progress --colors",
+    "build": "webpack --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -30,12 +30,14 @@
     "babel-preset-stage-0": "^6.3.13",
     "extract-text-webpack-plugin": "^1.0.1",
     "fabric": "^1.6.4",
+    "flux": "^3.0.0",
     "jquery": "^3.1.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "react-hot-loader": "^3.0.0-beta.6",
     "react-router": "^2.8.1",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
     "file-loader": "^0.9.0",

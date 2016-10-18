@@ -16,6 +16,7 @@ class Fabric_Text {
 		this.index 			= (object && typeof object.index != "undefined") ? object.index : this.canvas.getObjects().length;
 		this.originX 		= (object && typeof object.originX != "undefined") ? object.originX : 'center';
 		this.originY 		= (object && typeof object.originY != "undefined") ? object.originY : 'center';
+		this.class 			= (object && typeof object.class != "undefined") ? object.class : 'text';
 		this.originalObject = null;
 		this.width 			= (object && typeof object.width != "undefined") ? object.width : this.getWidth(this);
 	}

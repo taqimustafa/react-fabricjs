@@ -16,6 +16,7 @@ class Fabric_Image {
 		this.index 			= (object && typeof object.index != "undefined") ? object.index : this.canvas.getObjects().length;
 		this.originX 		= (object && typeof object.originX != "undefined") ? object.originX : 'center';
 		this.originY 		= (object && typeof object.originY != "undefined") ? object.originY : 'center';
+		this.class 			= (object && typeof object.class != "undefined") ? object.class : 'image';
 		this.originalObject = null;
 	}
 	create(){
@@ -42,7 +43,9 @@ class Fabric_Image {
 			});
 			that.originalObject = image;
 			that.canvas.add(image).setActiveObject(image).renderAll();
+			FabricStore.setActiveObject('image');
 		}
+		ImageObj.crossOrigin = "Anonymous";
 		ImageObj.src = this.src;
 	}
 	delete(){
